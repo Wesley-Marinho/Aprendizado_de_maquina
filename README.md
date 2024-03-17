@@ -18,3 +18,38 @@ Interpretação de resultados -> É importante para usuários, que lidam com ati
 
 Capítulo 2
 ----------
+
+Além das métricas de Machine Learning, também existem as métricas de negócios. É necessário buscar um equilíbrio entre elas, caso contrário, o projeto de ML pode ter uma vida mais curta do que o esperado. Idealmente, um projeto de ML deve possuir quatro características principais: confiabilidade, escalabilidade, capacidade de manutenção e adaptabilidade.
+
+Confiabilidade -> O sistema deve manter a execução correta na performance desejada, mesmo diante de adversidades como falhas de hardware ou software, e até mesmo erros humanos.
+
+Escalabilidade -> Existem diversas maneiras pelas quais um projeto de ML pode crescer, e devem existir abordagens razoáveis para lidar com esse crescimento. Não se trata apenas de escalar ou desescalar recursos, mas também de gerenciar artefatos. Gerenciar cem modelos é muito diferente de gerenciar um único modelo, demandando toda uma estratégia de administração.
+
+Capacidade de Manutenção-> Para garantir que o projeto possa ser mantido por um período indeterminado, é necessário aderir a certas práticas. Os modelos devem ser claros e reproduzíveis, permitindo que outros colaboradores compreendam e construam sobre o trabalho existente, mesmo na ausência do autor original.
+
+Adaptabilidade -> Para se ajustar às mudanças nos dados e nos requisitos de negócios, o sistema deve possuir capacidade para identificar melhorias no desempenho, permitindo atualizações sem interrupção do serviço.
+
+É importante ter em mente que o desenvolvimento de um sistema de ML é uma tarefa iterativa e, na maioria dos casos, um processo contínuo. Após a implementação, o sistema precisará ser continuamente monitorado e atualizado. O processo de desenvolvimento de um projeto de ML segue um fluxo definido em etapas interconectadas, incluindo o escopo do projeto, a engenharia de dados, o desenvolvimento do modelo de ML, a implantação, o monitoramento, a aprendizagem contínua e a análise de negócios.
+
+Escopo do Projeto -> O projeto inicia com a definição do escopo, estabelecendo metas, objetivos e restrições, além de identificar e envolver as partes interessadas, estimar e alocar recursos.
+
+Engenharia de Dados -> Como a maioria dos modelos de ML aprende com os dados, a engenharia desses dados é fundamental. A partir dos dados brutos, é necessário curar os dados de treinamento através de amostragem e geração de rótulos.
+
+Implantação -> Após o desenvolvimento do modelo, é preciso disponibilizá-lo aos usuários, estando preparado para os desafios que essa ação acarreta.
+
+Monitoramento e Aprendizagem Contínua -> Uma vez em produção, os modelos precisam ser monitorados quanto ao desempenho e adaptados a mudanças nos requisitos.
+
+Análise de Negócios -> O desempenho do modelo deve ser avaliado em relação às metas de negócios, gerando insights que podem ser utilizados para eliminar projetos improdutivos ou definir novos.
+
+Para entender melhor o tipo de modelo de ML a ser utilizado, é necessário compreender o problema e analisar suas necessidades. O tipo de problema determinará o modelo de ML a ser implementado, como classificação versus regressão, classificação binária versus multiclasse, e classificação multiclasse versus multirrótulo.
+
+Classificação versus Regressão -> Os modelos de classificação categorizam os inputs em diferentes classes, enquanto os modelos de regressão geram valores contínuos.
+
+Classificação Binária versus Multiclasse -> Quanto menos classes a classificar, mais simples é o problema. A classificação binária envolve apenas duas classes, enquanto a multiclasse envolve mais de duas.
+
+Classificação Multiclasse versus Multirrótulo -> Na multiclasse, cada exemplo pertence a uma única classe, enquanto na multirrótulo um exemplo pode pertencer a múltiplas classes.
+
+Para aprender, um modelo de ML necessita de uma função objetivo para orientar o processo de aprendizagem, também conhecida como função de perda, cujo objetivo é minimizar a discrepância entre as previsões do modelo e os rótulos verdadeiros, utilizando métricas como RMSE ou entropia cruzada.
+
+Capítulo 3
+----------

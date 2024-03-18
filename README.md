@@ -53,3 +53,46 @@ Para aprender, um modelo de ML necessita de uma função objetivo para orientar 
 
 Capítulo 3
 ----------
+
+Em qualquer projeto de ML é importante escolher o formato certo para onde os obter, onde armazenar os dados usados, e como os processar. Diferentes tipos de dados precisam de diferentes tipos de cuidados, por exemplo os dados inseridos por usuários são perigosos, pois a chance de um usuário passar um dado no formato é grande, isso torna necessário que exista um cuidado maior ao desenvolver aplicações que usem esse tipo de dado. 
+Já dados gerados pelo próprio sistema são importantes para conseguir ter informações sobre o desempenho do modelo, além disso é bastante usado para fazer "debug". Devido à natureza de como dados de log funcionam, dois problemas podem ocorrer: saber por onde começar a análise desses dados e onde armazenar esse grande volume de informações.  
+
+Existem também os bancos de dados internos, onde é possível analisar o comportamento dos usuários e a partir disso tentar executar ações previamente e assim agilizar procedimentos mais demorados. Com isso finalmente chegamos
+
+Existem também os bancos de dados internos, onde é possível analisar o comportamento dos usuários e a partir disso tentar executar ações previamente e assim agilizar procedimentos mais demorados. Com isso finalmente chegamos nos dados de first, second e third-party: 
+
+First-party -> São os dados que a própria empresa já coleta sobre seus usuários ou clientes. 
+
+Second-party-> São dados coletados a partir dos clientes de outra empresa, que geralmente os disponibiliza por um preço. 
+
+Third-party -> Os dados são coletados diretamente do público que não são seus clientes diretos. 
+
+Com o avanço da internet e o uso de computadores e smartphones, a coleta de dados de terceiros se tornou mais comum, facil e um modelo de negócio bem lucrativo. No entanto com essa facilidade, veio o problema com a privacidade do usuário. 
+
+O formato no qual os dados são consumidos pode influenciar significativamente a quantidade de espaço necessário para seu armazenamento e, consequentemente, os custos envolvidos nesse processo. Diversos fatores devem ser considerados na escolha do formato de dados ideal, tais como: Legibilidade para humanos, padrões de acesso, e se é baseado em texto ou binário, o que mais uma vez influencia o tamanho de seus arquivos. 
+
+O modelo dos dados vai descrever como os dados são representados, por exemplo em banco de dados são armazenadas as características e propriedades de um dado e como eles se relacionam com outros dados presentes na mesma base de dados. 
+
+Modelo relacional -> Neste modelo, os dados são organizados em relações; cada relação é um conjunto de tuplas. Uma tabela é uma representação visual de uma relação, e cada linha de uma tabela constitui uma tupla. 
+
+Modelo não relacional -> Existem dois tipos principais de modelos não relacionais 
+são eles o modelo de documento e o modelo de gráfico.  
+
+O modelo de documento visa usar casos em que os dados vêm em documentos independentes e existe raro relacionamento entre si.  
+
+O modelo grafo vai na direção oposta, visando casos de uso onde os relacionamentos entre itens de dados são comuns. 
+
+
+Normalmente, existem dois tipos de cargas de trabalho para as quais os bancos de dados são otimizados, processamento transacional e processamento analítico. 
+
+Transacional -> Os bancos de dados transacionais são projetados para processar transações on-line e satisfazer os requisitos de baixa latência e alta disponibilidade. Geralmente os bancos de dados usam ACID (atomicity, consistency, isolation, durability), isso garante uma maior integridade da base de dados. 
+
+Analítico -> Bancos de dados analíticos são projetados com a finalidade serem eficientes com consultas que permitem examinar os dados de diferentes pontos de vista. Chamamos esse tipo de processamento de online analytical processing (OLAP). 
+
+ETL -> Quando dados são extraídos de diferentes fontes, primeiro são transformados no desejado formato antes de serem carregado no destino de destino, como um banco de dados ou um armazém de dados. 
+
+Dentre os estilos mais populares de solicitações usados ​​para passar dados através de redes são REST (representational state transfer) e RPC (remote procedure call). Deles análise detalhada está além do escopo deste livro, mas uma diferença importante é que o REST foi projetado para solicitações em redes, enquanto o RPC “tenta fazer uma solicitação para um serviço de rede remoto é semelhante a chamar uma função ou método em sua linguagem de programação.” 
+
+Já o tipo mais comum de transporte em tempo real é o pubsub, que é curto para publicação-assinatura  e fila de mensagens. No modelo pubsub, qualquer serviço pode publicar sobre diferentes tópicos em transporte em tempo real e qualquer serviço que assinantes de um tópico podem ler todos os eventos desse tópico. 
+
+Existem duas formas de processar dados a primeira é via Batch processing e acontece quando pedaços inteiros de dados são processados em conjunto passando pelos mesmos procedimentos, a segunda é a stream processing e diz respeito ao processamento do dado antes mesmo dele chegar à base de dados, é geralmente usado em dados que mudam com muita frequência. 
